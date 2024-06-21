@@ -1,4 +1,174 @@
+:root{
+    --primary-nav-dark: #050718;
+    --primary-bg-dark: #070c15;
+    --primary-fontcolor-dark: #f9f9f9;
+    --primary-card-dark: #212d40;
+    --primary-section-dard: #0f151fd6;
+    --button-color: dodgerblue;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
+    background-color: var(--primary-bg-dark);
+    color: var(--primary-fontcolor-dark);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main */
+.main-header{
+    clip-path: polygon(100% 0, 100% 100%, 32% 100%, 0 39%, 0 0);
+    background-color: #35255944;
+}
+.main-section{
+    display: flex;
+    width: 70%;
+    margin: 0px auto;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.main-section .content-section{
+    flex: 1;
+}
+
+.main-section .image-section{
+    flex: 1
+}
+
+.image-section img{
+    width: 470px;
+    height: 600px;
+    border-radius: 10px;
+    clip-path: polygon(21% 0, 100% 0, 100% 78%, 81% 100%, 0 100%, 0 21%);
+}
+
+.image-section .image-overlay-top{
+    width: 460px;
     background-color: tomato;
-    color: white;
+    height: 600px;
+    position: absolute;
+    margin-left: -20px;
+    margin-top: -20px;
+    clip-path: polygon(21% 0, 100% 0, 100% 78%, 81% 100%, 0 100%, 0 21%);
+}
+
+.image-section .image-overlay-bottom{
+    width: 460px;
+    background-color: dodgerblue;
+    height: 600px;
+    position: absolute;
+    margin-left: 45px;
+    margin-top: 30px;
+    clip-path: polygon(21% 0, 100% 0, 100% 78%, 81% 100%, 0 100%, 0 21%);
+}
+
+.content-section .content{
+    padding: 30px;
+    display: inline-block;
+    height: 400px;
+    margin-top: 100px;
+    width: 500px;
+}
+
+.content h1{
+    font-size: 40px;
+}
+
+.content p{
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.content .form input{
+    width: 100%;
+    display: block;
+    height: 40px;
+    padding: 7px;
+    font-size: 20px;
+    color: var(--primary-fontcolor-dark);
+}
+
+.form input[type="email"]{
+    background-color: var(--primary-nav-dark);
+    outline: none;
+    border: 1px solid var(--primary-fontcolor-dark);
+    margin-top: 10px;
+}
+
+.form input[type="button"]{
+    margin-top: 10px;
+    background-color: var(--button-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 2s ease;
+}
+
+.form input[type="button"]:hover{
+    background-color: rgb(6, 99, 192);
+}
+
+/* Project */
+.project-section{
+    width: 100%;
+    padding: 50px 0px;
+    background-color: var(--primary-section-dard);
+}
+
+.project-section h1{
+    text-align: center;
+}
+
+.project-section .card-container{
+    display: flex;
+    gap: 16px;
+    width: 70%;
+    margin: 30px auto;
+}
+
+.card-container .card-item{
+    flex: 1;
+    background-color: var(--primary-card-dark);
+    border-radius: 10px;
+    min-height: 400px;
+}
+
+.card-item img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-item .card-content{
+    padding: 10px;
+}
+
+.card-item .card-content h2{
+    font-size: 18px;
+}
+
+.card-item .card-content p{
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.card-item .card-content a{
+    text-decoration: none;
+    color: var(--primary-fontcolor-dark);
+    background-color: var(--button-color);
+    width: 100%;
+    display: block;
+    padding: 7px 10px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 13px;
+    margin-top: 10px;
 }
