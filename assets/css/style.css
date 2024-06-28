@@ -80,42 +80,30 @@ body{
 }
 
 .content p{
-    margin-top: 20px;
+    margin: 20px 0px;
     line-height: 30px;
     font-size: 18px;
 }
 
-.content .form input{
-    width: 100%;
-    display: block;
-    height: 40px;
-    padding: 7px;
-    font-size: 20px;
-    color: var(--primary-fontcolor-dark);
-}
-
-.form input[type="email"]{
-    background-color: var(--primary-nav-dark);
-    outline: none;
-    border: 1px solid var(--primary-fontcolor-dark);
-    margin-top: 10px;
-}
-
-.form input[type="button"]{
-    margin-top: 10px;
+.content .button{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
     background-color: var(--button-color);
     border: none;
     outline: none;
     cursor: pointer;
+    border-radius: 20px;
     transition: background-color 2s ease;
 }
 
-.form input[type="button"]:hover{
+.content .button:hover{
     background-color: rgb(6, 99, 192);
 }
 
 /* Project */
 .project-section{
+    margin: 100px 0px;
     width: 100%;
     padding: 50px 0px;
     background-color: var(--primary-section-dard);
@@ -170,5 +158,168 @@ body{
     text-align: center;
     font-size: 16px;
     border-radius: 13px;
+    margin-top: 10px;
+}
+
+
+/* Demo Section */
+.dem-section{
+    width: 100%;
+    margin-bottom: 200px;
+    background: linear-gradient(300deg,#3c2b2b,#2c0b7a,#0c031f,#121017);
+    background-size: 240% 240%;
+    animation: gradient-animation 24s ease infinite;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.dem-section .demo-container{
+    width: 40%;
+    margin: auto;
+    padding: 30px;
+}
+
+.dem-section .demo-container iframe{
+    border: 1px dashed white;
+    border-radius: 30px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Keyfames */
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* Testemonial */
+
+.testemonial-section{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #212d40;
+}
+
+.testemonial-section h1{
+    text-align: center;
+}
+
+.testemonial-section .testimonial-container{
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    gap: 16px;
+}
+
+.testimonial-container .testimonial-item{
+    flex: 1 1 calc(25% - 32px);
+    background-color: var(--primary-section-dard);
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.testimonial-item img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+
+.testimonial-item p{
+    padding: 10px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.testimonial-item h3{
+    text-align: right;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Contact */
+.contact-section{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: var(--primary-section-dard);
+}
+
+.contact-section .contact-container{
+    display: flex;
+    gap: 16px;
+    width: 70%;
+    margin: auto;
+}
+
+.contact-container .contacts{
+    flex: 3;
+}
+
+.contact-container .subscirbe{
+    flex: 1;
+}
+
+.form-elment {
+    width: 100%;
+}
+
+
+.form-elment + 
+.form-elment{
+    margin-top: 20px;
+}
+
+form{
+    margin-top: 20px;
+}
+
+.form-elment label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-elment input, .form-elment textarea{
+    display: block;
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #6b6b6b4a;
+    outline: none;
+}
+
+.form-elment input:focus{
+    border: 1px solid #f9f9f9;
+}
+
+.button-section{
+    margin-top: 20px;
+    text-align: right;
+}
+.submit{
+    padding: 10px 30px;
+    background-color: var(--button-color);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.subscirbe .submit{
+    width: 100%;
+    border-radius: 10px;
     margin-top: 10px;
 }
